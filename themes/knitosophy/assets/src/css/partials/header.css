@@ -1,0 +1,22 @@
+.slickhero {
+    .slider__hero__item {
+        @apply h-[60vh] lg:h-[650px];
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.slider__hero__item {
+    .title {
+        @apply mb-0 title--3 lg:title--1 capitalize text-white;
+    }
+
+    p {
+        @apply text-white lg:max-w-[800px] font-montserrat font-semibold mt-4;
+        font-size: 1rem;
+
+        @screen lg {
+            font-size: 18px;
+        }
+    }
+}

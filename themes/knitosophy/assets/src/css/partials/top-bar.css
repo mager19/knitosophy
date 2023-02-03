@@ -1,0 +1,30 @@
+.top__bar {
+    @apply text-white flex h-[40px];
+
+    a {
+        @apply text-white font-bold hover:text-primary duration-300 ease-linear transition-all;
+    }
+}
+.social__icons {
+    a {
+        div {
+            &:before {
+                @apply text-white duration-300 ease-linear transition-all;
+                font-size: 24px;
+            }
+        }
+
+        &:hover {
+            div {
+                &:before {
+                    @apply text-primary;
+                }
+            }
+        }
+    }
+}
+
+.message {
+    letter-spacing: 1px;
+    font-size: 18px;
+}

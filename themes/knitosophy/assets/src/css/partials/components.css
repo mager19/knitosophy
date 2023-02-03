@@ -1,0 +1,7 @@
+.btn {
+    @apply px-12 py-3 mb-0 title--button rounded-3xl animationSettings inline-block;
+
+    &__primary {
+        @apply bg-primary text-white hover:bg-secondary hover:text-white;
+    }
+}

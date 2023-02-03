@@ -1,0 +1,20 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+
+@import "./partials/base.css";
+@import "./partials/nav.css";
+@import "./partials/footer.css";
+@import "./partials/icons.css";
+@import "./partials/top-bar.css";
+@import "./partials/header.css";
+@import "./partials/components.css";
+@import "./partials/home.css";
+@import "./partials/pages.css";
+
+@import "tailwindcss/utilities";
+
+@layer {
+    .animationSettings {
+        @apply duration-300 ease-linear transition-all;
+    }
+}
