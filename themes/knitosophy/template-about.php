@@ -43,7 +43,7 @@ get_header(); ?>
     </div>
 </div>
 
-<div class="aboutme__content">
+<div class="aboutme__content pb-14">
     <div class="container mx-auto">
         <div class="flex flex-wrap">
             <div class="w-full lg:w-10/12 mx-auto px-4">
