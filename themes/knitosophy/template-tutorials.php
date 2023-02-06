@@ -149,7 +149,7 @@ $offsetArray = [];
         <?php else : ?>
             <!-- no posts found -->
         <?php endif; ?>
-
+        <?php wp_reset_query(); ?>
 
 
     </div>

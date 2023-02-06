@@ -2,29 +2,28 @@
 function knitosophy__socialShare()
 {
     global $post;
-    $showBlock = get_field('show_share_icons', 'option');
-    if (is_singular('post') && $showBlock) {
-        // Get current page URL
-        $iconURL = get_permalink();
 
-        // Get current page title
-        $iconTitle = str_replace(' ', '%20', get_the_title());
-        $sumary = str_replace(' ', '%20', get_the_excerpt());
+    // Get current page URL
+    $iconURL = get_permalink();
 
-
-        // Get Post Thumbnail for pinterest
-        $iconThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
-
-        // Construct sharing URL without using any script
-        $twitterURL = 'https://twitter.com/intent/tweet?text=' . $iconTitle . '&amp;url=' . $iconURL . '&amp;via=icon';
-        $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u=' . $iconURL;
-        // $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url=' . $iconURL . '&amp;title=' . $iconTitle . '&sumary="' . $sumary . '"';
-
-        $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url=' . $iconURL . '';
+    // Get current page title
+    $iconTitle = str_replace(' ', '%20', get_the_title());
+    $sumary = str_replace(' ', '%20', get_the_excerpt());
 
 
-        //Svg icons
-        $twitterIcon = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    // Get Post Thumbnail for pinterest
+    $iconThumbnail = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
+
+    // Construct sharing URL without using any script
+    $twitterURL = 'https://twitter.com/intent/tweet?text=' . $iconTitle . '&amp;url=' . $iconURL;
+    $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u=' . $iconURL;
+
+
+
+
+
+    //Svg icons
+    $twitterIcon = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
         <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M352.751,163.259c0.123,2.773,0.186,5.561,0.186,8.36
             c0,85.403-65.002,183.876-183.873,183.876c-36.496,0-70.466-10.697-99.065-29.037c5.056,0.601,10.199,0.907,15.417,0.907
@@ -37,7 +36,7 @@ function knitosophy__socialShare()
         </svg>
         ';
 
-        $facebookIcon = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    $facebookIcon = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
         <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M301.004,125.217H265.44
             c-7.044,0-14.153,7.28-14.153,12.696v36.264h49.647c-1.999,27.807-6.103,53.235-6.103,53.235h-43.798V385h-65.266V227.395h-31.771
@@ -45,7 +44,7 @@ function knitosophy__socialShare()
         </svg>
         ';
 
-        $linkedInIcon = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+    $linkedInIcon = '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 455 455" style="enable-background:new 0 0 455 455;" xml:space="preserve">
         <g>
             <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
@@ -61,13 +60,12 @@ function knitosophy__socialShare()
         ';
 
 
-        // Add sharing button at the end of page/page content
-        $variable .= '<div class="icon-social"><i class="fa fa-share-alt" aria-hidden="true"></i><b>SHARE IT ON</b> <div class="icons">';
-        $variable .= '<a class="icon-link" href="' . $twitterURL . '" target="_blank">' . $twitterIcon . '</a>';
-        $variable .= '<a class="icon-link" href="' . $facebookURL . '" target="_blank">' . $facebookIcon . '</a>';
-        $variable .= '<a class="icon-link" href="' . $linkedInURL . '" target="_blank">' . $linkedInIcon . '</a>';
-        $variable .= '</div></div>';
+    // Add sharing button at the end of page/page content
+    $variable = '<div class="icon-social"><i class="fa fa-share-alt" aria-hidden="true"></i><b>SHARE IT ON</b> <div class="icons">';
+    $variable .= '<a class="icon-link" href="' . $twitterURL . '" target="_blank">' . $twitterIcon . '</a>';
+    $variable .= '<a class="icon-link" href="' . $facebookURL . '" target="_blank">' . $facebookIcon . '</a>';
 
-        return $variable;
-    }
+    $variable .= '</div></div>';
+
+    return $variable;
 };
