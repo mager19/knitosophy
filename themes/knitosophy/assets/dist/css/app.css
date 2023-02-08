@@ -2902,6 +2902,83 @@ footer .site-footer__top li a:visited{
         width: 244px;
         height: 271px;
 }
+.contact__page{
+    text-align: center;
+}
+@media (min-width: 768px){
+
+    .contact__page{
+        text-align: left;
+    }
+}
+.contact__page .title,
+    .contact__page a{
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    --tw-text-opacity: 1;
+    color: rgb(26 28 30 / var(--tw-text-opacity));
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 3.25rem;
+    letter-spacing: 0.03em;
+}
+.contact__page span{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.188rem;
+    letter-spacing: 0.05em;
+}
+@media (min-width: 1024px){
+
+    .contact__page .contact__left{
+        padding-right: 1rem;
+    }
+}
+label{
+    font-family: Montserrat, sans-serif;
+    --tw-text-opacity: 1;
+    color: rgb(26 28 30 / var(--tw-text-opacity));
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.188rem;
+    letter-spacing: 0.05em;
+}
+input{
+    border-radius: 5px !important;
+    --tw-border-opacity: 1 !important;
+    border-color: rgb(209 213 219 / var(--tw-border-opacity)) !important;
+}
+.wpforms-submit{
+    margin-bottom: 0px !important;
+    display: inline-block !important;
+    border-radius: 1.5rem !important;
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(96 166 69 / var(--tw-bg-opacity)) !important;
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+    font-weight: 600 !important;
+    font-family: Montserrat !important;
+    font-size: 0.875rem !important;
+    line-height: 1rem !important;
+}
+@layer {
+    .wpforms-submit{
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+    }
+}
+.wpforms-submit:hover{
+    --tw-bg-opacity: 1 !important;
+    background-color: rgb(14 92 109 / var(--tw-bg-opacity)) !important;
+    --tw-text-opacity: 1 !important;
+    color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
 .visible{
     visibility: visible;
 }
@@ -3116,11 +3193,14 @@ footer .site-footer__top li a:visited{
     padding-left: 0.25rem;
     padding-right: 0.25rem;
 }
+.pb-14{
+    padding-bottom: 3.5rem;
+}
 .pt-4{
     padding-top: 1rem;
 }
-.pb-14{
-    padding-bottom: 3.5rem;
+.pt-8{
+    padding-top: 2rem;
 }
 .text-center{
     text-align: center;
@@ -3221,6 +3301,10 @@ footer .site-footer__top li a:visited{
 
     .md\:w-7\/12{
         width: 58.333333%;
+    }
+
+    .md\:w-8\/12{
+        width: 66.666667%;
     }
 
     .md\:grid-cols-2{
@@ -3331,6 +3415,10 @@ footer .site-footer__top li a:visited{
 
     .lg\:pl-4{
         padding-left: 1rem;
+    }
+
+    .lg\:pt-0{
+        padding-top: 0px;
     }
 
     .lg\:text-left{

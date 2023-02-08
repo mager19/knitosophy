@@ -344,3 +344,30 @@
         height: 271px;
     }
 }
+
+.contact__page {
+    @apply text-center md:text-left;
+    .title,
+    a {
+        @apply text-text uppercase title--3 mb-0;
+    }
+    span {
+        @apply title--4;
+    }
+
+    .contact__left {
+        @apply lg:pr-4;
+    }
+}
+
+label {
+    @apply text-text title--4 font-montserrat;
+}
+
+input {
+    @apply border-gray-300 rounded-[5px] !important;
+}
+
+.wpforms-submit {
+    @apply bg-primary text-white hover:bg-secondary hover:text-white px-12 py-3 mb-0 title--button rounded-3xl animationSettings inline-block !important;
+}
