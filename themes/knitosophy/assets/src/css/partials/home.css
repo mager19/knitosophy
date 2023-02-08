@@ -28,6 +28,11 @@
     a {
         @apply text-xl lg:text-2xl font-semibold text-white hover:text-primary-lighter animationSettings;
     }
+    svg {
+        path {
+            @apply fill-white hover:fill-primary-lighter animationSettings;
+        }
+    }
 }
 
 .hellofriends {

@@ -41,9 +41,21 @@ get_header(); ?>
                             </div>
                             <p><?php the_sub_field('description_slider'); ?></p>
                             <div class="navSlider">
-                                <a href="javascript:void(0);" class="JS-slick-nextSlider">Previous</a>
-                                <span>/</span>
-                                <a href="javascript:void(0);" class="JS-slick-prevSlider">Next</a>
+                                <a href="javascript:void(0);" class="JS-slick-nextSlider">
+                                    <svg width="24px" height="24px" version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="rotate(45 1254.8 524.44)">
+                                            <path d="m15.464 1044.4v-1.997h-9v-9h-2v11z" fill="#fff" fill-rule="evenodd" />
+                                        </g>
+                                    </svg>
+                                </a>
+
+                                <a href="javascript:void(0);" class="JS-slick-prevSlider">
+                                    <svg width="24px" height="24px" version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                        <g transform="rotate(45 1254.8 524.44)">
+                                            <path d="m11.532 1048.3h-1.996v-9h-9v-2h11z" fill="#fff" fill-rule="evenodd" />
+                                        </g>
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>

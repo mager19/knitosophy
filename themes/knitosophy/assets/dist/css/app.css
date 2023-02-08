@@ -1938,6 +1938,20 @@ footer .site-footer__top li a:visited{
         line-height: 2rem;
     }
 }
+.navSlider svg path{
+    fill: #fff;
+}
+@layer {
+    .navSlider svg path{
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+        transition-timing-function: linear;
+    }
+}
+.navSlider svg path:hover{
+    fill: #a0ac9a;
+}
 .hellofriends{
     position: relative;
     overflow: hidden;
@@ -3413,12 +3427,12 @@ input{
         padding-right: 2rem;
     }
 
-    .lg\:pl-4{
-        padding-left: 1rem;
-    }
-
     .lg\:pt-0{
         padding-top: 0px;
+    }
+
+    .lg\:pl-4{
+        padding-left: 1rem;
     }
 
     .lg\:text-left{
