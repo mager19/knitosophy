@@ -630,3 +630,11 @@ input {
 .woocommerce-button {
     @apply buttonStyles;
 }
+
+.added_to_cart {
+    @apply font-montserrat text-text;
+
+    &:visited {
+        @apply text-text;
+    }
+}

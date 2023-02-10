@@ -848,3 +848,68 @@ blockquote {
         }
     }
 }
+
+.menuModal {
+    .iziModal-content {
+        @apply bg-light-1;
+
+        .modal__content {
+            @apply px-7 !important;
+
+            img {
+                width: 80%;
+                height: auto;
+                object-fit: cover;
+                margin: 0 auto;
+            }
+
+            ul {
+                @apply ml-0 mt-5;
+
+                li {
+                    list-style: none;
+                    a {
+                        @apply text-primary font-semibold;
+                        letter-spacing: 1px;
+                        transition: all 0.3s linear;
+
+                        &:hover {
+                            @apply text-primary-lighter;
+                        }
+
+                        &:visited {
+                            @apply text-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal__header {
+    text-align: right;
+
+    button {
+        @apply bg-transparent border-0;
+
+        svg {
+            path {
+                stroke: #e7cfc4 !important;
+            }
+        }
+    }
+}
+
+.iziModal-content {
+    @apply px-4 pt-4 pb-8 !important;
+}
+
+.modalfoot {
+    img {
+        @apply flex mt-4 mb-8;
+    }
+    .iziModal-content {
+        @apply px-8 pt-4 pb-8 !important;
+    }
+}

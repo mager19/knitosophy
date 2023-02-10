@@ -8,9 +8,8 @@
         <span class='product__price inline-block'><?php echo wc_price($price); ?></span>
         <?php $id = get_the_ID(); ?>
 
-        <a href='?add-to-cart=<?php echo $id; ?>' class="add_to_cart_button button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart">
+        <a href='?add-to-cart=<?php echo $id; ?>' data-quantity="1" class="add_to_cart_button button wp-element-button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $id; ?>">
             Add To Cart
         </a>
-        <!-- //Todo: Add a notification when an article was added to the cart -->
     </div>
 </div>

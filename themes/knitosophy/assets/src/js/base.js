@@ -5,6 +5,10 @@ import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import "izimodal";
+import "iziModal/css/iziModal.min.css";
+import "iziModal/js/iziModal.min.js";
+
 (function ($) {
     // Slick
     $(".slickhero").slick({
@@ -87,5 +91,10 @@ import "slick-carousel/slick/slick-theme.css";
 
     jQuery(".newCollectionPrevSlider").on("click", () => {
         jQuery(".newCollection__products__slide").slick("slickNext");
+    });
+
+    jQuery(function () {
+        /* Instantiating iziModal */
+        jQuery(".modalMenu").iziModal({});
     });
 })(jQuery);

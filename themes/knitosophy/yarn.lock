@@ -3351,6 +3351,13 @@ isobject@^3.0.1:
   resolved "https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
+izimodal@^1.6.1:
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/izimodal/-/izimodal-1.6.1.tgz#2f13688a6096a77ac743b82debe6b6e025b8c245"
+  integrity sha512-PwaeHMjSgP7hte0/Hx4zI1ew7zEIDuJSp28ZvRb23FbfJ9wLZX2Dy2dT+7w8mli4650WJaIuXZsMnHBLKwreMQ==
+  dependencies:
+    jquery "~3"
+
 jest-util@^29.2.1:
   version "29.2.1"
   resolved "https://registry.npmmirror.com/jest-util/-/jest-util-29.2.1.tgz"
@@ -3382,7 +3389,7 @@ jest-worker@^29.1.2:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
-jquery@^3.6.3:
+jquery@^3.6.3, jquery@~3:
   version "3.6.3"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.6.3.tgz#23ed2ffed8a19e048814f13391a19afcdba160e6"
   integrity sha512-bZ5Sy3YzKo9Fyc8wH2iIQK4JImJ6R0GWI9kL1/k7Z91ZBNgkRXE6U0JfHIizZbort8ZunhSI3jw9I6253ahKfg==
