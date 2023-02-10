@@ -163,10 +163,19 @@
     }
 }
 
+.add_to_cart_button {
+    @apply px-8 py-3 mb-0 mt-2 title--button rounded-3xl animationSettings inline-block bg-primary text-white hover:bg-secondary hover:text-white w-full text-center !important;
+}
+
 .products__item {
+    figure {
+        @apply overflow-hidden;
+    }
     img {
+        @apply overflow-hidden;
         object-fit: cover;
         height: 402px;
+        transition: transform 0.8s ease;
 
         @screen md {
             height: 250px;
@@ -177,6 +186,13 @@
             height: 302px;
         }
     }
+
+    &:hover {
+        img {
+            transform: scale(1.5);
+        }
+    }
+
     .titleProduct {
         @apply text-text font-bold title--5 font-montserrat no-underline mt-2;
         min-height: 32px;

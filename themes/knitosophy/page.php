@@ -13,7 +13,7 @@
 get_header(); ?>
 
 <!-- Hero Header -->
-<?php get_template_part('template-parts/hero', 'content'); ?>
+<?php get_template_part('template-parts/hero', 'pages'); ?>
 <!-- /Hero Header -->
 
 <div class="content__page py-8">

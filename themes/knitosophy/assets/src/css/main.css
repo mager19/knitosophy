@@ -17,4 +17,8 @@
     .animationSettings {
         @apply duration-300 ease-linear transition-all;
     }
+
+    .buttonStyles {
+        @apply px-12 py-3 mb-0 title--button rounded-3xl  inline-block bg-primary text-white hover:bg-secondary hover:text-white duration-300 ease-linear transition-all !important;
+    }
 }

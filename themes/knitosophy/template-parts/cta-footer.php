@@ -1,5 +1,12 @@
 <?php
 
+if (is_post_type_archive('product')) {
+  $page = get_page_by_path('shop');
+  $pageId = $page->ID;
+} else {
+  $pageId = get_the_ID();
+}
+
 wp_reset_query();
 $args = array(
   'post_type' => 'cta',
@@ -8,7 +15,7 @@ $args = array(
     array(
       'key'    => 'cta_relationship',
       'compare'  => 'LIKE',
-      'value'    => get_the_ID(),
+      'value'    => $pageId,
     ),
   ),
 );

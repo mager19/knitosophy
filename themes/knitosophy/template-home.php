@@ -96,7 +96,9 @@ if ($showNewCollection) { ?>
                         <div class='newCollection__products__slide'>
                             <?php foreach ($posts as $post) : setup_postdata($post); ?>
                                 <div class='products__item md:px-2'>
-                                    <?php the_post_thumbnail(); ?>
+                                    <figure>
+                                        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                                    </figure>
                                     <div class="info flex flex-col">
                                         <a class='titleProduct inline-block' href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                         <?php $price = get_post_meta(get_the_ID(), '_price', true); ?>
@@ -183,7 +185,7 @@ if ($showNewCollection) { ?>
     <div class="w-full">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <?php $bgTestimonial = get_field('image_testimonial'); ?>
-            <div class="testimonials__left bg-red-50" style='background-image: url( <?php echo $bgTestimonial; ?> );'>
+            <div class="testimonials__left" style='background-image: url( <?php echo $bgTestimonial; ?> );'>
             </div>
 
             <div class="testimonials__right px-4">

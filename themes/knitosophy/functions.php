@@ -42,3 +42,23 @@ if (function_exists('acf_add_options_page')) {
 
 /** ACF Custom functions **/
 require('inc/functions/custom-functions.php');
+
+add_theme_support('woocommerce');
+
+
+
+
+// function hwl_home_pagesize($query)
+// {
+	
+// 	if (!is_admin()  && is_post_type_archive('product')) {
+
+
+
+
+
+// 		$query->set('post__not_in', $idsExclude);
+// 		return;
+// 	}
+// }
+// add_action('pre_get_posts', 'hwl_home_pagesize', 1);
