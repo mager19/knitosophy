@@ -19,7 +19,7 @@
 defined('ABSPATH') || exit;
 
 do_action('woocommerce_before_cart'); ?>
-
+<!-- 
 <div class="container mx-auto">
 	<div class="flex">
 		<div class="w-full lg:w-8/12 mx-auto intro__cart">
@@ -39,7 +39,7 @@ do_action('woocommerce_before_cart'); ?>
 			<p>Want your pattern added to your Ravelry library? After purchasing, simply email me with your Ravelry username and I’ll gift it to you on there.</p>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
 	<?php do_action('woocommerce_before_cart_table'); ?>
