@@ -15,7 +15,6 @@ $background = get_field('default_background_pages_image', 'option');
                         <?php woocommerce_page_title(); ?>
                     <?php
                     } else { ?>
-
                         <span><?php the_title(); ?></span>
                     <?php
                     } ?>

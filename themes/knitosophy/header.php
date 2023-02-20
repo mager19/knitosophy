@@ -13,7 +13,6 @@
 
 <head>
 
-    <?php get_template_part('inc/functions/datalayer', 'info'); ?>
 
     <!--/Google Tag Manager-->
     <meta charset="<?php bloginfo('charset'); ?>">

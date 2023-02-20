@@ -16,7 +16,9 @@ get_header(); ?>
 <div class="container mx-auto py-14">
     <div class="info">
 
-        <h1 class="uppercase title--3 title-md--1">Blog</h1>
+
+        <?php the_archive_title('<h1 class="page-title uppercase title--3 title-md--1">', '</h1>'); ?>
+
 
         <!-- List Post -->
         <div class="grid grid-cols-3">
@@ -47,7 +49,7 @@ get_header(); ?>
         <!-- Pagination -->
         <?php if (function_exists('knitosophy__pagination')) : ?>
             <div class="pagination">
-                <?php knitosophy__pagination($posts->max_num_pages, "", $paged); ?>
+                <?php knitosophy__pagination(); ?>
             </div>
         <?php endif; ?>
         <!-- End Pagination -->
